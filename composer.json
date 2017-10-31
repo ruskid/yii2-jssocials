@@ -13,7 +13,8 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/jssocials": "1.5.*"
+        "FortAwesome/Font-Awesome": "*",
+        "bower-asset/jssocials": "1.*"
     },
     "minimum-stability": "dev",
     "autoload": {
