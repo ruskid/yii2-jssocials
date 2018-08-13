@@ -19,14 +19,14 @@ class JsSocialsAsset extends AssetBundle {
 
     public $sourcePath = '@bower/jssocials';
 
-    public function init() {
-        parent::init();
-
-        $this->css[] = 'dist/jssocials.css';
-        $this->js[] = YII_DEBUG ?
-                'dist/jssocials.js' : 'dist/jssocials.min.js';
-    }
-
+    public $css = [
+        'dist/jssocials.css'
+    ];
+    
+    public $js = [
+        'dist/jssocials.min.js'
+    ];
+   
     public $depends = [
         'yii\web\YiiAsset',
         'ruskid\jssocials\assets\FontAwesomeAsset'
