@@ -19,11 +19,7 @@ class FontAwesomeAsset extends AssetBundle {
 
     public $sourcePath = '@vendor/fortawesome/font-awesome';
 
-    public function init() {
-        parent::init();
-
-        $this->css[] = YII_DEBUG ?
-                'css/font-awesome.css' : 'css/font-awesome.min.css';
-    }
-
+    public $css = [
+        'css/font-awesome.min.css'
+    ];
 }
