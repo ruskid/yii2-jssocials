@@ -19,12 +19,10 @@ class JsSocialsClassicAsset extends AssetBundle {
 
     public $sourcePath = '@bower/jssocials';
 
-    public function init() {
-        parent::init();
-
-        $this->css[] = 'dist/jssocials-theme-classic.css';
-    }
-
+    public $css = [
+        'dist/jssocials-theme-classic.css'
+    ];
+  
     public $depends = [
         'ruskid\jssocials\assets\JsSocialsAsset'
     ];
